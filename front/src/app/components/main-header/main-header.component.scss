@@ -1,0 +1,67 @@
+.m-container{
+    width: 100%;
+}
+.temp{
+    height: 300px;
+    background: violet;
+    width: 100%;
+}
+.main-header{
+    background: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+.main-header h1{
+    padding: 0rem;
+    letter-spacing: 9px;
+    font-size: 105px;    
+}
+.main-nav{
+    padding-top: .5rem;
+    background: white;
+    text-align: center;
+    width: 100%;
+}
+.sticky-wrapper{
+    position: sticky;
+    top:0px;
+    z-index: 100;
+}
+.main-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.main-nav a:hover{
+    background: black;
+    color: white;
+}
+.header-info{
+    position: absolute;
+    right: 10px;
+    bottom: 10%;
+}
+.header-info a{
+    text-decoration: none;
+}
+.header-info p{
+    font-size: 20px;
+    color: white;
+}
+.logo{
+    position: absolute;
+    left: 10px;
+    bottom: 10%;
+    height: 100px;
+}
+.footer-black{
+    background: black;
+    color: white;
+
+}

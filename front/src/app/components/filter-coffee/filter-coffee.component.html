@@ -1,0 +1,28 @@
+<div class="filter-container">
+    <form [formGroup]="filterGroup" >
+        <div class="form-mygroup">
+            <label class="form-label">Country</label>
+            <input class="form-control form-c-s" type="text" (input)="inputChanged()" formControlName="Country"/>   
+        </div>
+        <div class="form-mygroup">
+            <label class="form-label">Manufacturer</label>
+            <input class="form-control form-c-s" type="text" (input)="inputChanged()" formControlName="Manufacturer"/>   
+        </div>
+        <div class="form-mygroup">
+            <label class="form-label">Roast</label>
+            <input class="form-control form-c-s" type="text" (input)="inputChanged()" formControlName="RoastType"/>   
+        </div>
+        
+        <div class="form-check form-mygroup ">
+            <button class="btn ground-btn" (click)="changeGround()">{{isGrounded}}</button>
+        </div>
+
+
+        <div class="form-mygroup">
+            <label>{{maxPrice}}</label>
+            <input type="range" min="0" formControlName="MaxPrice" (input)="priceInputChanged($event.target.value)" max="500">
+        </div>
+    </form>
+
+</div>
+

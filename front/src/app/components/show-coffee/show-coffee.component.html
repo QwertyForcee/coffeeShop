@@ -1,0 +1,31 @@
+<div class="show-coffee-div">
+    <app-filter-coffee (paramsChangedEvent)="setParams($event)"></app-filter-coffee>
+    <div class="sc-container" *ngIf="isEmpty">
+        <div  class="product-wrapper" *ngFor="let product of products">
+            <a class="product">
+                <div class="product-photo">
+                    <!--<img src="{{product.image}}" alt="">--> 
+                    <app-coffee-img></app-coffee-img>
+                </div>
+                <h1>{{product.name}}</h1>
+                <p class="manuf">{{product.manufacturer}}</p>
+                <app-buy-btn [price]="product.price" [coffee]="product"></app-buy-btn>
+            </a>
+        </div>  
+    </div>
+
+    <div *ngIf="isNotEmpty" class="empty-list">
+        <svg width="216" height="287" viewBox="0 0 216 287" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 185C13.7642 203.619 24.0255 221.501 32.6667 241.167C38.1512 253.649 45.7202 268.72 55.5 278.5C60.135 283.135 69.4023 281.969 75.1111 282C94.4525 282.104 113.773 282.927 133.111 283C142.18 283.034 152.164 284.209 161 282" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            <path d="M163 283C166.515 274.212 171.634 266.215 173.889 256.944C176.619 245.722 176.125 233.949 179.056 222.778C181.996 211.566 187.434 199.946 193.444 190.111C195.479 186.782 196.205 183.637 198.778 180.778C201.132 178.161 201.048 177.1 197.556 176C172.042 167.968 144.277 170 117.944 170C97.2392 170 76.7175 170.264 56.1667 172.944C48.0908 173.998 39.6667 175.385 31.5556 175.944C25.3309 176.374 19.2549 177 13 177C9.98629 177 7.97041 179 5 179" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            <path d="M186 199C196.18 199.242 207.56 205.219 210.444 215.444C213.4 225.924 212.577 237.235 205.5 245.944C197.447 255.855 182.756 259.378 172 254" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            <path d="M64 145C74.2354 148.495 76.0912 131.334 78 124C79.4319 118.498 80.9275 112.97 78.2778 107.556C74.1781 99.1779 66.2046 92.856 59.6111 86.5556C50.5627 77.9093 45.9347 65.3308 50.2222 52.9444C55.27 38.362 71.7318 29.8772 74 14" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            <path d="M95 147C99.4146 147.457 103.225 147.972 105.778 143.778C108.96 138.55 110.778 131.838 110.778 125.778C110.778 115.55 107.482 105.544 105.222 95.6667C103.431 87.8396 102.155 80.6705 98.3889 73.4444C93.3459 63.7673 87.281 55.3247 91.4444 44.2222C97.1323 29.0545 110.953 23.2486 124 16" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            <path d="M129 151C142.364 145.694 153.796 135.807 156.333 120.778C159.993 99.1008 143.133 86.554 127.444 76C120.304 71.1961 127.896 57.5824 131.222 52.7778C143.429 35.1452 159.278 19.4665 173 3" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            
+        <h1>Кофе не найдено</h1>
+    </div>
+</div>
+
+<!--https://sun9-69.userapi.com/impg/nxXvVe0RBAgmxpM4uCUMH7IihQPfqtTloP-CDA/nvUeMIfFSKM.jpg?size=714x710&quality=96&sign=a1d54636c76103b0697f198b188cc56b&type=album -->

@@ -1,0 +1,51 @@
+<h2>Create new coffee product.</h2>
+<div class="coffee-form-container">
+    <form [formGroup]="coffeeForm" (ngSubmit)="submit()">
+        <div class="form-group form-group-m">
+            <label>Name</label>
+            <input class="form-control" type="text" formControlName="Name"/>   
+        </div>
+
+        <div class="form-group form-group-m">
+            <label>Description</label>
+            <input class="form-control" type="text" formControlName="Description"/>   
+        </div>
+
+        <div class="form-group form-group-m">
+            <label>Price</label>
+            <input class="form-control" type="number" formControlName="Price"/>   
+        </div>
+
+        <div class="form-group form-group-m">
+            <label>Manufacturer</label>
+            <input class="form-control" type="text" formControlName="Manufacturer"/>   
+        </div>
+
+        <div class="form-group form-group-m">
+            <label>Country</label>
+            <input class="form-control" type="text" formControlName="Country"/>  
+        </div>
+
+        <div class="form-group form-group-m">
+            <label >Roast</label>
+            <select name="roastSelect" formControlName="RoastType">
+                <option value="Blonde">Blonde</option>
+                <option value="Medium">Medium</option>
+                <option value="Dark">Dark</option>
+            </select>
+        </div>
+
+        <div class="form-check form-group-m">
+            <label>Is Grounded</label>
+            <input class="form-control " type="checkbox" formControlName="IsGrounded"/>  
+        </div>
+        <div class="form-group form-group-m">
+            <label>Image</label>
+            <input class="form-control" type="file" (change)='openFile($event)'/>
+            <img src="{{src}}" alt="">  
+        </div>
+
+        <button class="btn btn-success btn-lg" type="submit" >Submit</button>
+
+    </form>
+</div>

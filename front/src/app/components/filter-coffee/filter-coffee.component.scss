@@ -1,0 +1,66 @@
+.filter-container{
+    background: black;
+    color: white;
+    padding-bottom: 9rem;
+    width: 100%;
+}
+.form-mygroup{
+    padding: 1rem;
+    float: left;
+    width: 15%;
+}
+.form-label{
+    height: 35px;
+    font-size: 35px;
+}
+.form-c-s{
+    background: black;
+    color: white;
+    border: white solid;
+    font-size: 30px;
+    height: 35px;
+    outline: 0;
+    border-width: 0 0 2px;
+}
+.btn-lg{
+    background: white;
+    color: black;
+    margin: 1rem;
+}
+.form-check-b{
+    height: 30px;
+    width: 30px;
+    background: black;
+}
+.ground-btn{
+  color: white;
+  font-size: 35px;
+  height: 35px;
+  box-shadow: none;
+}
+
+/*Chrome*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      width: 100%;
+      overflow: hidden;
+      -webkit-appearance: none;
+      background-color: #ffffff;
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      color: #43e5f7;
+    }
+  }
+

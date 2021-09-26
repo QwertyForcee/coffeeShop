@@ -1,0 +1,20 @@
+.cart-container{
+    width: 100%;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+.cart-container table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mybtn{
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    bottom: 10%;
+    font-size: 85px;
+    padding: 0;
+    background: black;
+    color: white;
+}

@@ -1,0 +1,11 @@
+#git ignore
+
+.vs
+
+CoffeeShopApi/bin
+CoffeeShopApi/obj
+CoffeeShopApi/appsettings.json
+
+front/node_modules
+front/e2e/*.js
+front/e2e/*.map
